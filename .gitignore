@@ -1,27 +1,184 @@
-# Companion App
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-Flutter mobile companion app for the Smart Compression Sleeve. Displays
-real-time exercise form feedback, counts reps, and persists session history
-to a Supabase backend.
+# C extensions
+*.so
 
-## Stack
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-- **Framework:** Flutter / Dart
-- **Backend:** Supabase (Postgres + Auth, RLS-enabled)
-- **Connection:** WebSocket to the local Python bridge for live sensor feed
+# PyInstaller
+*.manifest
+*.spec
 
-## Setup
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-```bash
-flutter pub get
-flutter run
-```
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
 
-Make sure the Python bridge (`../bridge/`) is running and that your device
-is on the same network if running the app on a physical phone.
+# Translations
+*.mo
+*.pot
 
-## Configuration
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
 
-Supabase credentials are loaded at runtime. **Do not commit `.env` files or
-hardcoded service-role keys** — only the anon key is safe to ship, and even
-that should be loaded from configuration, not embedded in source.
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ============================================
+# Mac / editor junk
+# ============================================
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# ============================================
+# Arduino / firmware build artifacts
+# ============================================
+*.hex
+*.elf
+*.bin
+*.uf2
+
+# ============================================
+# Flutter / Dart
+# ============================================
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.pub-cache/
+**/.pub/
+
+# iOS-specific Flutter artifacts
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Runner.xcworkspace/xcuserdata/
+
+# Android-specific Flutter artifacts
+**/android/.gradle/
+**/android/captures/
+**/android/local.properties
+**/android/key.properties
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+
+# ============================================
+# Sensor data (uncomment to keep raw data out of repo)
+# ============================================
+# *.csv
+# data/
